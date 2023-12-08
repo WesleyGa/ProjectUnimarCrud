@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px 0;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+li strong {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+li p {
+    color: #555;
+}
+
+li .actions {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex; 
+}
+
+li .actions a {
+    margin-left: 10px;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+li .actions .editar {
+    background-color: #007BFF;
+}
+
+li .actions .excluir {
+    background-color: #DC3545;
+}
+
+@media screen and (max-width: 600px) {
+    li {
+        padding: 15px;
+    }
+    li .actions {
+        position: static;
+        margin-top: 10px;
+    }
+    li .actions a {
+        margin-left: 0;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
